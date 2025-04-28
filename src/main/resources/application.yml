@@ -1,0 +1,38 @@
+spring:
+  datasource:
+    db1:
+      username: postgres
+      password: postgres
+      url: jdbc:postgresql://localhost:5432/postgres
+      driver-class-name: org.postgresql.Driver
+#    db2:
+#      username: postgres
+#      password: postgres
+#      url: jdbc:postgresql://localhost:5431/postgres
+#      driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+api:
+  post:
+    store:
+      node1: "http://localhost:8081/blob/store-file"
+      node2: "http://localhost:8082/blob/store-file"
+
+  get:
+    get:
+      node1: "http://localhost:8081/blob/get-file?fileId="
+      node2: "http://localhost:8082/blob/get-file?fileId="
+
