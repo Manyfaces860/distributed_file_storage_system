@@ -18,7 +18,6 @@ It provides a simple REST API for uploading, retrieving, and managing files in a
 ## 🛠 Tech Stack
 - **Backend:** Java, Spring Boot
 - **Database:** PostgreSQL
-- **Containerization:** Docker
 - **Others:** Base64 encoding for chunk transfer
 
 ---
