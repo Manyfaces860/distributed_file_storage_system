@@ -11,8 +11,7 @@ It provides a simple REST API for uploading, retrieving, and managing files in a
 - Distribute chunks across two or more storage nodes.
 - Store metadata (file info, chunk info) in a **PostgreSQL** database.
 - Reassemble chunks into original files on download.
-- Designed to be lightweight, modular, and easily scalable.
-- Dockerized for quick setup and deployment.
+- Designed to be lightweight, modular
 
 ---
 
